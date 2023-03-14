@@ -1,8 +1,8 @@
-package com.example.shop.data
+package com.example.shop.data.db
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.example.shop.models.CategoryModel
+import com.example.shop.data.models.CategoryModel
 
 @Dao
 interface CategoryDao {
