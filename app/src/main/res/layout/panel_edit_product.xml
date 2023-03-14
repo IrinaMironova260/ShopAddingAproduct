@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
+
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".tabs.PanelEditProduct">
+    tools:context=".presentation.tabs.products.PanelEditProduct">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -14,17 +15,21 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/headerEditProduct"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
             android:text="@string/editProduct"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/sectionEditNameProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/labelEnterNameProduct"
             app:boxBackgroundColor="@android:color/transparent"
             app:boxStrokeColor="@android:color/white"
             app:boxStrokeWidthFocused="4dp"
@@ -33,11 +38,7 @@
             app:hintTextColor="@android:color/white"
             app:layout_constraintTop_toBottomOf="@id/headerEditProduct"
             app:startIconDrawable="@drawable/catalog_categories"
-            app:startIconTint="@android:color/white"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:hint="@string/labelEnterNameProduct">
+            app:startIconTint="@android:color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editNameProduct"
@@ -46,12 +47,14 @@
                 android:inputType="text"
                 android:textColor="@android:color/white"
                 android:textCursorDrawable="@drawable/cursor" />
-
         </com.google.android.material.textfield.TextInputLayout>
-
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/sectionEditCategoryProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/labelEnterCategory"
             app:boxBackgroundColor="@android:color/transparent"
             app:boxStrokeColor="@android:color/white"
             app:boxStrokeWidthFocused="4dp"
@@ -60,11 +63,7 @@
             app:hintTextColor="@android:color/white"
             app:layout_constraintTop_toBottomOf="@id/sectionEditNameProduct"
             app:startIconDrawable="@drawable/catalog_products"
-            app:startIconTint="@android:color/white"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:hint="@string/labelEnterCategory">
+            app:startIconTint="@android:color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editCategoryProduct"
@@ -78,6 +77,10 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/sectionEditPriceProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/labelEnterPriceProduct"
             app:boxBackgroundColor="@android:color/transparent"
             app:boxStrokeColor="@android:color/white"
             app:boxStrokeWidthFocused="4dp"
@@ -86,11 +89,7 @@
             app:hintTextColor="@android:color/white"
             app:layout_constraintTop_toBottomOf="@id/sectionEditCategoryProduct"
             app:startIconDrawable="@drawable/price"
-            app:startIconTint="@android:color/white"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:hint="@string/labelEnterPriceProduct">
+            app:startIconTint="@android:color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editPriceProduct"
@@ -99,16 +98,15 @@
                 android:inputType="number"
                 android:textColor="@android:color/white"
                 android:textCursorDrawable="@drawable/cursor" />
-
         </com.google.android.material.textfield.TextInputLayout>
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/sectionResEditProduct"
-            app:layout_constraintTop_toBottomOf="@id/sectionEditPriceProduct"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/sectionEditPriceProduct">
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/resEditNameProduct"
@@ -135,13 +133,14 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/buttonEditProduct"
-            app:layout_constraintTop_toBottomOf="@id/sectionResEditProduct"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@color/black"
             android:text="@string/editProduct"
-            android:textColor="@color/orange" />
+            android:textColor="@color/orange"
+            app:layout_constraintTop_toBottomOf="@id/sectionResEditProduct" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </FrameLayout>

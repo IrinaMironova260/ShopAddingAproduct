@@ -2,16 +2,16 @@
     <string name="app_name">Shop</string>
 
     <string name="panel">ПАНЕЛЬ</string>
-    <string name="catalogProducts">ТОВАРЫ</string>
-    <string name="catalogClothes">ОДЕЖДА</string>
+    <string name="catalogProducts">ПРОДУКЦИЯ</string>
+    <string name="catalogClothes">СОРТИРОВКА</string>
     <string name="shoes">ОБУВЬ</string>
     <string name="accessories">АКСЕССУАРЫ</string>
 
     <string name="catalogCategories">КАТЕГОРИИ</string>
     <string name="addCategory">ДОБАВИТЬ КАТЕГОРИЮ</string>
-    <string name="addProduct">ДОБАВИТЬ ТОВАР</string>
+    <string name="addProduct">ДОБАВИТЬ ПРОДУКТ</string>
     <string name="editCategory">РЕДАКТИРОВАНИЕ КАТЕГОРИИ</string>
-    <string name="editProduct">РЕДАКТИРОВАНИЕ ТОВАРА</string>
+    <string name="editProduct">РЕДАКТИРОВАНИЕ ПРОДУКТОВ</string>
 
     <string name="labelEnterCategory">Введите название категории</string>
     <string name="labelEnterNameProduct">Введите название товара</string>
